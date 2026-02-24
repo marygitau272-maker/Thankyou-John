@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You for Teaching Me to Code</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        .card {
+            max-width: 800px;
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            padding: 30px;
+            text-align: center;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 2.5rem;
+        }
+        .message {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            color: #34495e;
+            margin: 30px 0;
+            padding: 20px;
+            background: #f9f9f9;
+            border-radius: 10px;
+            border-left: 5px solid #3498db;
+            text-align: left;
+            white-space: pre-wrap; /* keeps line breaks */
+        }
+        .images {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .images img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .images img:hover {
+            transform: scale(1.02);
+        }
+        .audio-section {
+            margin: 30px 0 20px;
+        }
+        .audio-section p {
+            font-size: 1.1rem;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        audio {
+            width: 100%;
+            max-width: 400px;
+            margin-top: 10px;
+            border-radius: 30px;
+        }
+        footer {
+            margin-top: 30px;
+            font-size: 0.9rem;
+            color: #7f8c8d;
+            border-top: 1px solid #ecf0f1;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <!-- Header – replace "Alex" with your friend's name -->
+        <h1>Thank You, Alex! 💻</h1>
+
+        <!-- Personal message – replace everything inside this div with your own words -->
+        <div class="message">
+            <!-- 
+                =====================================================
+                ✍️ YOUR PERSONAL MESSAGE GOES HERE
+                =====================================================
+                Write whatever you want – paragraphs, memories, 
+                inside jokes, gratitude. It will appear with a nice 
+                background and left border.
+            -->
+            <p>Dear Alex,</p>
+            <p>I still remember the day you explained your first line of code to me. 
+            You made something intimidating feel like a puzzle we could solve together. 
+            Thanks to your patience and passion, I not only learned to code but 
+            also discovered a new way of thinking.</p>
+            <p>These two photos remind me of our best coding sessions – 
+            endless cups of coffee, weird bugs, and the joy when things finally worked. 
+            And this song? It was playing the night we built our first small project. 
+            Every time I hear it, I smile.</p>
+            <p>Thank you for being an amazing teacher and an even better friend.</p>
+            <p>With gratitude,<br>[Your Name]</p>
+        </div>
+
+        <!-- Two photos – replace "photo1.jpg" and "photo2.jpg" with your actual image filenames -->
+        <div class="images">
+            <!-- 
+                =====================================================
+                🖼️ YOUR TWO PHOTOS
+                =====================================================
+                Put your image files in the same folder as this HTML.
+                Replace the names inside src="..." with the correct 
+                filenames (e.g., "coding_session.jpg", "coffee_with_friend.png").
+                You can also add alt text descriptions.
+            -->
+            <img src="photo1.jpg" alt="Coding session with my friend" title="Debugging together">
+            <img src="photo2.jpg" alt="Celebrating after a successful project" title="That proud moment">
+        </div>
+
+        <!-- Thank you song – replace "thankyou.mp3" with your audio file name -->
+        <div class="audio-section">
+            <p>🎵 A little song to say thank you 🎵</p>
+            <!-- 
+                =====================================================
+                🎧 YOUR THANK YOU SONG
+                =====================================================
+                Place your audio file (mp3, ogg, etc.) in the same folder.
+                Update the src accordingly. The 'controls' attribute 
+                lets your friend play/pause the song.
+            -->
+            <audio controls>
+                <source src="thankyou.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p style="font-size: 0.9rem; margin-top: 8px; color: #555;">
+                (Right-click and save the audio file if you'd like to keep it)
+            </p>
+        </div>
+
+        <!-- Optional footer – you can remove or edit it -->
+        <footer>
+            Made with ❤️ and a little bit of HTML/CSS
+        </footer>
+    </div>
+</body>
+</html>
